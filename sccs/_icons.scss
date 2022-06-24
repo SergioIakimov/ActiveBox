@@ -1,0 +1,68 @@
+.icons {
+    min-height: 1020px;
+    &__cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &__img img{
+            padding-top: 2.7rem;
+            width: 70%;
+            display: block;
+            margin: 0 auto;
+        }
+        &__title {
+            padding: 2.35rem 0rem 0rem 0rem;
+            .title {
+                color: #2D3033;
+                font-size: 1.15rem;
+                text-transform: uppercase;
+            }
+        }
+        &__descr {
+            padding: 0.7rem 0rem 0rem 0rem;
+            .descr {
+                text-align: center;
+                font-size: 0.87rem;
+                color: #6C7279;
+            }
+        }
+    }
+
+    
+
+
+
+
+
+    //////////////////////////////////////
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 0.7rem;
+        &__title {
+            padding-bottom: 1.8rem;
+        }
+        &__descr {
+            .descr {
+                font-size: 1rem;
+            }
+            padding-bottom: 3rem;
+        }
+        &__button {
+            padding: 1rem 2.7rem;;
+            background-color: #FF4343;
+            .title {
+                text-decoration: none;
+                font-size: 1.5rem;
+            }
+            
+        }
+    }
+}

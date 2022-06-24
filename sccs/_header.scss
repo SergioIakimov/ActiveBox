@@ -1,0 +1,124 @@
+.header {
+    position: relative;
+    // max-width: 280px;
+    margin: 0 auto;
+    background-color: transparent;
+    &__wrapper {
+        height: 6rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__logo {
+        padding: 0rem 1.2rem;
+        color: aliceblue;
+        text-decoration: none;
+        z-index: 10;
+    }
+    &__nav {
+        position: absolute;
+        width: 100vw;
+        opacity: 0.99;
+        visibility: hidden;
+        &.open {
+            visibility: visible;
+        }
+        
+        &__menu {
+            list-style: none;
+            display: flex;
+            flex-flow: column wrap;
+            align-items: left;
+            height: 100vh;
+            overflow: hidden;
+            background: 
+                url("../img/bg.png") center top;
+                background-size: cover;
+            // background-color: black;////////////////////
+            list-style-type: none;
+            padding-right: 2rem;
+            transform: translateY(-100%);
+            @include trans;
+            &.open {
+                transform: translateY(0);
+            }
+            
+            &__items {
+                transform: translateX(100vw);
+                @include trans;
+                &.open {
+                    transform: translateX(0);
+                }
+                &.active>a {
+                    color: rgb(207, 232, 236);
+                }
+                &__link {
+                    color: aliceblue;
+                    display: inline-block;
+                    font-size: 1.5rem;
+                    text-decoration: none;
+                    text-transform: capitalize;
+                    padding: 5rem 0rem 1rem 3rem;
+                    font-weight: 300;
+                    @include trans;
+                    &:hover {
+                        color: rgb(255, 0, 4);
+                    }
+                }
+            }
+        }
+    }
+    &__btn {
+        position: absolute;
+        z-index: 1;
+        top: 1.2rem;
+        right: 2.5rem;
+        height: 1rem;
+        width: 1.5rem;
+        cursor: pointer;
+        @include trans;
+        &__burger {
+            position: absolute;
+            right: 0;
+            top: 0.5rem;
+            width: 1.5rem;
+            height: 0.2rem;
+            background-color: white;
+            @include trans;
+            &::before {
+                content: '';
+                position: absolute;
+                top: -0.5rem;
+                width: 1.5rem;
+                height: 0.2rem;
+                background-color: white;
+                @include trans;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0.5rem;
+                width: 1.5rem;
+                height: 0.2rem;
+                background-color: white;
+                @include trans;
+            }
+            &.open {
+                transform: rotate(720deg);
+                background: transparent;
+                &::before {
+                    transform: rotate(45deg) translate(5px, 8px);
+                }
+                &::after {
+                    width: 1.5rem;
+                    transform: rotate(-45deg) translate(3px, -7px);
+                }
+            }
+        }
+    }
+}
+
+@for $i from 1 through 5 {
+    .header__nav__menu__items:nth-child(#{$i}) {
+        transition-delay: ($i*0.1s)+ 0.15s;
+    }
+}

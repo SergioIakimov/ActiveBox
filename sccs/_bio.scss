@@ -1,0 +1,57 @@
+.bio {
+    min-height: 1200px;
+    &__cards {
+        display: flex;
+        flex-direction: column;
+        padding-top: 1.3rem;
+    }
+    &__card {
+        display: flex;
+        flex-direction: column;
+        padding-top: 2.9rem;
+        &__img {
+            height: 14.1rem;
+            width: 17rem;
+            & img {
+                width: 100%;
+                height: 100%; 
+                object-fit: none;
+            }
+        }
+        &__title {
+            padding-top: 1.7rem;
+            & .title {
+                font-size: 1.15rem;
+            }
+        }
+        &__descr {
+            padding-top: 0.45rem;
+            padding-bottom: 2rem;
+            & .red {
+                color: red;
+                text-transform: uppercase;
+                font-size: 0.87rem;
+            }
+            text-align: left;
+            & .descr {
+                font-size: 0.87rem;
+            }
+
+        }
+        &__social {
+            // display: flex;
+            &__icon {
+                display: inline-block;
+                font-size: 0.35rem;
+                padding: 0.5rem;
+                border: 1px solid #C6CBCD;
+                margin-top: 1.5rem;
+                & a {
+                    color: #C6CBCD;
+                }
+            }
+        }
+
+    }
+
+}

@@ -34,35 +34,28 @@
         }
     }
 
-    
-
-
-
-
-
     //////////////////////////////////////
-    &__content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 0.7rem;
-        &__title {
-            padding-bottom: 1.8rem;
-        }
-        &__descr {
-            .descr {
-                font-size: 1rem;
-            }
-            padding-bottom: 3rem;
-        }
-        &__button {
-            padding: 1rem 2.7rem;;
-            background-color: #FF4343;
-            .title {
-                text-decoration: none;
-                font-size: 1.5rem;
-            }
-            
-        }
-    }
+    // &__content {
+    //     display: flex;
+    //     flex-direction: column;
+    //     align-items: center;
+    //     padding-top: 0.7rem;
+    //     &__title {
+    //         padding-bottom: 1.8rem;
+    //     }
+    //     &__descr {
+    //         .descr {
+    //             font-size: 1rem;
+    //         }
+    //         padding-bottom: 3rem;
+    //     }
+    //     &__button {
+    //         padding: 1rem 2.7rem;;
+    //         background-color: #FF4343;
+    //         .title {
+    //             text-decoration: none;
+    //             font-size: 1.5rem;
+    //         }
+    //     }
+    // }
 }

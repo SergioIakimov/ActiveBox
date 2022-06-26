@@ -1,0 +1,100 @@
+.slider {
+  &__wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    padding-top: 2rem;
+  }  
+  &__cards {
+    width: 600%;
+    display: flex;
+    justify-content: start;
+  }
+
+  &__card {
+    width: 16.7%;
+    transition: 1s;
+    background-color: #5C3249;
+    &__img {
+        // height: 100%;
+        // width: 100%;
+        & img {
+            width: 100%;
+            height: 100%; 
+            object-fit:cover;
+        }
+    }
+    &__text {
+        padding: 1rem 1.2rem;
+        &__descr{
+            padding-top: 1.8rem;
+            padding-bottom: 5.2rem;
+            & .descr {
+                text-transform: uppercase;
+                font-size: 0.75rem;
+                color: #FFFFFF;
+            }
+        }
+        &__quotes{
+          padding-top: 0.2rem;
+            & .quote {font-family: 'Cardo';
+            font-style: italic;
+            font-weight: 400;
+            font-size: 1.5rem;
+            line-height: 2rem;
+            align-items: center;
+            text-align: center;
+            text-transform: capitalize;
+            color: #FFFFFF;
+            }
+            
+        }
+    }
+  }  
+
+  .navigation-manual {
+    padding: 1.3rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .manual-btn {
+    border: 2px solid #59595a;
+    padding: 1%;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 1s;
+    &:not(:last-child){
+      margin-right: 1.3rem;
+    }
+    &:hover {
+    background: #292a2a;
+    }
+    &:focus:active {
+      background: #424343;
+    }
+  }
+
+  #radio1:checked ~ .first {
+    margin-left: 0;
+  }
+  #radio2:checked ~ .first {
+    margin-left: -16.7%;
+  }
+  #radio3:checked ~ .first {
+    margin-left: -33.4%;
+  }
+  #radio4:checked ~ .first {
+    margin-left: -50.1%;
+  }
+  #radio5:checked ~ .first {
+    margin-left: -66.8%;
+  }
+    #radio5,
+    #radio4,
+    #radio3,
+    #radio2,
+    #radio1 {
+        display: none;
+    }
+}

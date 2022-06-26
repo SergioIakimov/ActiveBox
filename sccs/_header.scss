@@ -22,7 +22,6 @@
         &.open {
             visibility: visible;
         }
-        
         &__menu {
             list-style: none;
             display: flex;
@@ -41,7 +40,6 @@
             &.open {
                 transform: translateY(0);
             }
-            
             &__items {
                 transform: translateX(100vw);
                 @include trans;

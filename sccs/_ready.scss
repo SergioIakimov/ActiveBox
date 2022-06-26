@@ -1,0 +1,35 @@
+.ready {
+    min-height: 263px;
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 2.1rem;
+        &__title {
+            .title {
+                text-align: center;
+                font-size: 1.1rem;
+            }
+            padding-bottom: 1.4rem;
+        }
+        &__descr {
+            .descr {
+                font-size: 0.8rem;
+                text-transform: uppercase;
+                text-align: center;
+                font-weight: 700;
+            }
+            padding-bottom: 0.7rem;
+        }
+        &__button {
+            padding: 1.75rem 3.6rem;
+            background-color: #FF4343;
+            .title {
+                text-transform: uppercase;
+                text-decoration: none;
+                font-size: 1.15rem;
+                color: #FFFFFF;
+            }
+        }
+    }
+}

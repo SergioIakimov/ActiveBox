@@ -1,0 +1,15 @@
+.footer {
+    background-color: #2C3154;
+    &__descr {
+        padding: 2rem 0;
+
+        & .descr {
+            text-align: center;
+            font-size: 0.87rem;
+            color: #FFFFFF;
+            & .gray {
+                color: #808080;
+            }
+        }
+    }
+}

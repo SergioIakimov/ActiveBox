@@ -3,12 +3,13 @@
     &__cards {
         display: flex;
         flex-direction: column;
-        padding-top: 1.3rem;
+        margin-top: -1rem;
+        padding-top: 0rem;
     }
     &__card {
         display: flex;
         flex-direction: column;
-        padding-top: 2.9rem;
+        padding-top: 3rem;
         &__img {
             height: 14.1rem;
             width: 17rem;
@@ -36,7 +37,6 @@
             & .descr {
                 font-size: 0.87rem;
             }
-
         }
         &__social {
             // display: flex;
@@ -51,7 +51,5 @@
                 }
             }
         }
-
     }
-
 }

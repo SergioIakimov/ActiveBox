@@ -37,6 +37,16 @@
                 font-size: 1.5rem;
                 color: #FFFFFF;
             }
+            &:hover {
+                cursor: pointer;
+                background: #E71414;
+                @include trans;
+            }
+            &:active {
+                background: #FF4343;
+                box-shadow: 4px 4px 30px #FF4343;
+                @include trans;
+            }
         }
     }
 }

@@ -48,7 +48,13 @@
                 margin-top: 1.5rem;
                 & a {
                     color: #C6CBCD;
+
+                    &:hover {
+                    cursor: pointer;
+                    color: #2327e6;
+                    }
                 }
+                
             }
         }
     }

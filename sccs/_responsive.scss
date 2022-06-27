@@ -128,6 +128,19 @@
         min-height: 460px;
         &__img {
             width: 25%;
+            &__title {
+                font-size: 1.8rem;
+                padding-bottom: 0.8rem;
+                text-transform: uppercase;
+            }
+            &__descr {
+                font-size: 1.5rem;
+            }
+            &:hover {
+                .info {
+                    transform: translateY(-9rem);
+                }
+            }
         }
     }
 
@@ -322,6 +335,41 @@
             }
         }
     }
+    .gallery {
+        min-height: 460px;
+        &__img {
+            &__title {
+                font-size: 2rem;
+                padding-bottom: 0.8rem;
+                text-transform: uppercase;
+            }
+            &__descr {
+                font-size: 1.8rem;
+            }
+            height: 21rem;
+            &:hover {
+                .info {
+                    opacity: 1;
+                    transform: translateY(-12rem);
+                }
+                &:before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+    
+                }
+            }
+        }
+    }
+
+
+
+
+
     .bio {
         min-height: 827px;
        

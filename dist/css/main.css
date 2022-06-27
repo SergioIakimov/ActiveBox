@@ -259,9 +259,11 @@ h1 {
   flex-wrap: wrap;
   justify-content: space-between;
   padding-top: 2rem;
+  overflow: hidden;
 }
 .gallery__img {
   width: 50%;
+  overflow: hidden;
   transition: all 1s ease-in-out;
 }
 .gallery__img img {
@@ -278,6 +280,7 @@ h1 {
   transition: 0.5s;
   color: #ffffff;
   text-align: center;
+  background: transparent;
 }
 .gallery__img__title {
   font-size: 1rem;
@@ -692,6 +695,17 @@ h1 {
   .gallery__img {
     width: 25%;
   }
+  .gallery__img__title {
+    font-size: 1.8rem;
+    padding-bottom: 0.8rem;
+    text-transform: uppercase;
+  }
+  .gallery__img__descr {
+    font-size: 1.5rem;
+  }
+  .gallery__img:hover .info {
+    transform: translateY(-9rem);
+  }
 
   .bio {
     min-height: 659px;
@@ -868,6 +882,34 @@ h1 {
   .icons__card__descr .descr {
     font-size: 1.1rem;
     line-height: 1.4rem;
+  }
+
+  .gallery {
+    min-height: 460px;
+  }
+  .gallery__img {
+    height: 21rem;
+  }
+  .gallery__img__title {
+    font-size: 2rem;
+    padding-bottom: 0.8rem;
+    text-transform: uppercase;
+  }
+  .gallery__img__descr {
+    font-size: 1.8rem;
+  }
+  .gallery__img:hover .info {
+    opacity: 1;
+    transform: translateY(-12rem);
+  }
+  .gallery__img:hover:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
   }
 
   .bio {

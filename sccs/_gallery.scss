@@ -5,9 +5,11 @@
         flex-wrap: wrap;
         justify-content: space-between;
         padding-top: 2rem;
+        overflow: hidden;
     }
     &__img {
         width: 50%;
+        overflow: hidden;
         @include trans;
         & img{
         // padding-top: 2.7rem;
@@ -25,6 +27,7 @@
 		transition: 0.5s;
         color: #ffffff;
         text-align: center;
+        background: transparent;
 
         }
         &__title {
@@ -46,6 +49,7 @@
             .info {
                 opacity: 1;
                 transform: translateY(-6rem);
+                // height: auto;
 
             }
             &:before {

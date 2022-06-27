@@ -190,6 +190,7 @@ h1 {
   padding-bottom: 3rem;
 }
 .promo__content__descr .descr {
+  text-align: center;
   font-size: 1rem;
   color: #FFFFFF;
 }
@@ -496,6 +497,427 @@ h1 {
   color: #808080;
 }
 
+@media (min-width: 1023px) {
+  .container {
+    max-width: 984px;
+  }
+
+  .container__full {
+    max-width: 1024px;
+  }
+
+  .header {
+    position: relative;
+    background-color: transparent;
+  }
+  .header__container {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+  .header__wrapper {
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #BABBC5;
+  }
+  .header__logo {
+    padding: 0rem 1.2rem;
+  }
+  .header__logo img {
+    width: 14.5rem;
+    height: 6.5rem;
+  }
+  .header__nav {
+    position: relative;
+    width: 100%;
+    opacity: 0.99;
+    visibility: visible;
+    padding-right: 0rem;
+  }
+  .header__nav__menu {
+    justify-content: end;
+    display: flex;
+    flex-flow: row;
+    align-items: left;
+    height: auto;
+    overflow: hidden;
+    background: transparent;
+    padding-right: 0rem;
+    transform: translateY(0);
+    transition: all 0.5s ease-in-out;
+  }
+  .header__nav__menu__items {
+    transform: translateX(0);
+    transition: all 0.5s ease-in-out;
+  }
+  .header__nav__menu__items.active > a {
+    border-bottom: 3px solid #BABBC5;
+    color: rgb(207, 232, 236);
+  }
+  .header__nav__menu__items__link {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    padding: 2.5rem 1.4rem 2.5rem 1.5rem;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 300;
+    transition: all 0.5s ease-in-out;
+  }
+  .header__nav__menu__items__link:hover {
+    color: rgb(255, 0, 4);
+  }
+  .header__btn {
+    display: none;
+  }
+
+  .promo {
+    min-height: 768px;
+  }
+  .promo__content {
+    padding-top: 0.7rem;
+  }
+  .promo__content__title {
+    padding-top: 9.3rem;
+    padding-bottom: 1.8rem;
+  }
+  .promo__content__title .title {
+    font-size: 3rem;
+  }
+  .promo__content__descr {
+    padding: 2.3rem 6rem 6rem 6rem;
+  }
+  .promo__content__descr .descr {
+    font-size: 1.18rem;
+  }
+  .promo__content__button {
+    padding: 1.5rem 4rem;
+  }
+
+  .icons {
+    min-height: 650px;
+  }
+  .icons__cards {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .icons__cards {
+    padding-top: 2rem;
+  }
+  .icons__card {
+    width: 33%;
+  }
+  .icons__card__title {
+    padding: 3rem 0rem 0rem 0rem;
+  }
+  .icons__card__img img {
+    padding-top: 2.7rem;
+    width: 86%;
+  }
+  .icons__card__descr {
+    padding: 1.1rem 0rem 0rem 0rem;
+  }
+
+  .gallery {
+    min-height: 460px;
+  }
+  .gallery__img {
+    width: 25%;
+  }
+
+  .bio {
+    min-height: 659px;
+  }
+  .bio__cards {
+    flex-direction: row;
+    margin-top: -1rem;
+    padding-top: 0rem;
+    justify-content: space-between;
+  }
+  .bio__card {
+    padding-top: 5.1rem;
+    width: 24%;
+  }
+  .bio__card__img {
+    height: 100%;
+    width: 100%;
+  }
+  .bio__card__img img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .bio__card__title {
+    padding-top: 1.7rem;
+  }
+  .bio__card__title .title {
+    font-size: 1.15rem;
+  }
+  .bio__card__descr {
+    padding-top: 0.45rem;
+    padding-bottom: 0.9rem;
+  }
+  .bio__card__descr .descr {
+    padding-right: 0.2rem;
+  }
+  .bio__card__social__icon {
+    font-size: 0.25rem;
+  }
+
+  .slider__card {
+    display: flex;
+  }
+  .slider__card__img {
+    width: 100%;
+  }
+  .slider__card__img img {
+    width: 116%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .slider__card__text__quotes {
+    padding: 2.9rem 6rem 1rem 6rem;
+  }
+  .slider__card__text__descr {
+    padding: 0rem 8.5rem;
+  }
+  .slider .manual-btn {
+    padding: 0.5%;
+  }
+
+  .ready {
+    min-height: 332px;
+  }
+  .ready__content {
+    padding-top: 4.1rem;
+  }
+  .ready__content__descr {
+    padding-bottom: 2.75rem;
+  }
+  .ready__content__descr .descr {
+    font-size: 0.8rem;
+  }
+  .ready__content__title {
+    padding-bottom: 1.4rem;
+  }
+  .ready__content__title .title {
+    font-size: 1.47rem;
+  }
+  .ready__content__button {
+    padding: 1.75rem 4.7rem;
+  }
+
+  .info__wrapper {
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+  }
+  .info__about {
+    width: 33%;
+  }
+  .info__about__title {
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+  }
+  .info__about__descr .descr {
+    font-size: 0.9rem;
+    text-transform: capitalize;
+  }
+  .info__about__social {
+    padding-top: 0.8rem;
+  }
+
+  .footer__descr {
+    padding: 1rem 20rem;
+  }
+}
+@media (min-width: 1509px) {
+  .container {
+    max-width: 1170px;
+  }
+
+  .container__full {
+    max-width: 1510px;
+  }
+
+  .header__container {
+    max-width: 1210px;
+    margin: 0 auto;
+  }
+  .header__nav__menu__items__link {
+    padding: 2.5rem 2.1rem 2.5rem 2.2rem;
+  }
+
+  .promo {
+    min-height: 747px;
+  }
+  .promo__content__title {
+    padding-top: 7.6rem;
+    padding-bottom: 1.8rem;
+  }
+  .promo__content__title .title {
+    font-size: 3.95rem;
+  }
+  .promo__content__descr {
+    padding: 0.5rem 5rem 5.5rem 5rem;
+  }
+  .promo__content__descr .descr {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  .promo__content__button {
+    padding: 1.5rem 5.75rem;
+  }
+
+  .icons {
+    min-height: 916px;
+  }
+  .icons__cards {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .icons__cards {
+    padding: 2rem 0;
+  }
+  .icons__card {
+    width: 33%;
+  }
+  .icons__card__title {
+    padding: 3.5rem 0rem 0rem 0rem;
+  }
+  .icons__card__title .title {
+    font-size: 1.5rem;
+  }
+  .icons__card__img img {
+    padding-top: 5rem;
+    width: 100%;
+  }
+  .icons__card__descr {
+    padding: 2.5rem 1rem 0rem 0rem;
+  }
+  .icons__card__descr .descr {
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+  }
+
+  .bio {
+    min-height: 827px;
+  }
+  .bio__card {
+    padding-top: 8rem;
+  }
+  .bio__card__img img {
+    width: 95%;
+  }
+  .bio__card__title {
+    padding-top: 1.7rem;
+  }
+  .bio__card__title .title {
+    font-size: 1.5rem;
+  }
+  .bio__card__descr {
+    padding-top: 0.45rem;
+    padding-bottom: 0.9rem;
+  }
+  .bio__card__descr .descr {
+    padding-right: 0.2rem;
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+  }
+  .bio__card__social {
+    padding-top: 1rem;
+  }
+  .bio__card__social__icon {
+    font-size: 0.35rem;
+  }
+
+  .slider__card {
+    display: flex;
+  }
+  .slider__card__img {
+    width: 87%;
+  }
+  .slider__card__img img {
+    width: 130%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .slider__card__text__quotes {
+    padding: 7.5rem 10rem 1rem 18rem;
+    letter-spacing: 0.1rem;
+  }
+  .slider__card__text__quotes .quote {
+    font-size: 2rem;
+    line-height: 3rem;
+    text-align: left;
+  }
+  .slider__card__text__descr {
+    padding: 0.8rem 17.5rem;
+  }
+
+  .ready {
+    min-height: 436px;
+  }
+  .ready__content {
+    padding-top: 7.1rem;
+  }
+  .ready__content__descr {
+    padding-bottom: 3.5rem;
+  }
+  .ready__content__descr .descr {
+    font-size: 1.1rem;
+  }
+  .ready__content__title {
+    padding-bottom: 1.4rem;
+  }
+  .ready__content__title .title {
+    font-size: 1.85rem;
+  }
+  .ready__content__button {
+    padding: 1.75rem 4.7rem;
+  }
+  .ready__content__button .title {
+    font-size: 1.5rem;
+  }
+
+  .info {
+    min-height: 250px;
+  }
+  .info__wrapper {
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+  }
+  .info__about {
+    width: 33%;
+  }
+  .info__about__title {
+    padding-top: 4.5rem;
+    padding-bottom: 2rem;
+  }
+  .info__about__title .title {
+    font-size: 1.1rem;
+  }
+  .info__about__descr .descr {
+    font-size: 1.1rem;
+    text-transform: capitalize;
+  }
+  .info__about__social {
+    padding-top: 0.8rem;
+  }
+  .info__about__social__icon {
+    font-size: 0.35rem;
+  }
+
+  .footer__descr {
+    padding: 2rem 25rem;
+  }
+  .footer__descr .descr {
+    font-size: 1.1rem;
+  }
+}
 h2 {
   font-size: 2.3rem;
 }

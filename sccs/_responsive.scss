@@ -1,0 +1,454 @@
+@media (min-width:1023px) {
+    .container {
+        max-width: 984px;
+    }
+    .container__full {
+        max-width: 1024px;
+    }
+    .header {
+        &__container {
+            max-width: 1024px;
+            margin: 0 auto;
+        }
+        position: relative;
+        background-color: transparent;
+        &__wrapper {
+            // max-width: 900px;
+            height: 6rem;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #BABBC5;
+        }
+        &__logo {
+            padding: 0rem 1.2rem;
+            & img {
+                width: 14.5rem;
+                height: 6.5rem;
+            }
+        }
+        &__nav {
+            position: relative;
+            width: 100%;
+            opacity: 0.99;
+            visibility: visible;
+            padding-right: 0rem;
+            
+            &__menu {
+                justify-content: end;
+                display: flex;
+                flex-flow: row;
+                align-items: left;
+                height: auto;
+                overflow: hidden;
+                background: transparent;
+                // background-color: black;////////////////////
+
+                padding-right: 0rem;
+                transform: translateY(0);
+                @include trans;
+
+                &__items {
+                    
+                    transform: translateX(0);
+                    @include trans;
+                  
+                    &.active>a {
+                        border-bottom: 3px solid #BABBC5;
+                        color: rgb(207, 232, 236);
+                    }
+                    &__link {
+                        font-size: 0.8rem;
+                        text-transform: uppercase;
+                        padding: 2.5rem 1.4rem 2.5rem 1.5rem;
+                        display: inline-block;
+                        text-decoration: none;
+                        font-weight: 300;
+                        @include trans;
+                        &:hover {
+                            color: rgb(255, 0, 4);
+                        }
+                    }
+                }
+            }
+        }
+        &__btn {
+            display: none;
+        }
+    }
+
+    .promo {
+        min-height: 768px;
+        &__content {
+            padding-top: 0.7rem;
+            &__title {
+                .title {
+                    font-size: 3rem;
+                }
+                padding-top: 9.3rem;
+                padding-bottom: 1.8rem;
+            }
+            &__descr {
+                .descr {
+                    font-size: 1.18rem;
+                }
+                padding: 2.3rem 6rem 6rem 6rem;;
+            }
+            &__button {
+                padding: 1.5rem 4rem;
+            }
+        }
+    }
+
+
+    .icons {
+        min-height: 650px;
+        &__cards {
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+        &__cards {
+            padding-top: 2rem;
+        }
+        
+        &__card {
+            width: 33%;
+            &__title {
+                padding: 3rem 0rem 0rem 0rem;
+            }
+            &__img img{
+                padding-top: 2.7rem;
+                width: 86%;
+            }
+            &__descr {
+                padding: 1.1rem 0rem 0rem 0rem;
+            }
+        }
+    }
+    .gallery {
+        min-height: 460px;
+        &__img {
+            width: 25%;
+        }
+    }
+
+
+
+    .bio {
+        min-height: 659px;
+        &__cards {
+            flex-direction: row;
+            margin-top: -1rem;
+            padding-top: 0rem;
+            justify-content: space-between;
+        }
+        &__card {
+            padding-top: 5.1rem;
+            width: 24%;
+            &__img {
+                height: 100%;
+                width: 100%;
+                & img {
+                    width: 100%;
+                    height: 100%; 
+                    object-fit: cover;
+                }
+            }
+            &__title {
+                padding-top: 1.7rem;
+                & .title {
+                    font-size: 1.15rem;
+                }
+            }
+            &__descr {
+                padding-top: 0.45rem;
+                padding-bottom: 0.9rem;
+
+                & .descr {
+                    padding-right: 0.2rem;
+                }
+            }
+            &__social {
+                &__icon {
+                    font-size: 0.25rem;
+                }
+            }
+        }
+    }
+    .slider {
+        &__card {
+            display: flex;
+
+            &__img {
+                width: 100%;
+                & img {
+                    width: 116%;
+                    height: 100%; 
+                    object-fit:cover;
+                }
+            }
+            &__text {
+                &__quotes {
+                    padding: 2.9rem 6rem 1rem 6rem;
+                }
+                &__descr {
+                    padding: 0rem 8.5rem;
+                }
+            }
+        }
+        .manual-btn {
+            padding: 0.5%;
+        }
+    }
+
+    .ready {
+        min-height: 332px;
+        &__content {
+            padding-top: 4.1rem;
+            &__descr {
+                padding-bottom: 2.75rem;
+                .descr {
+                    font-size: 0.8rem;
+                }
+            }
+            &__title {
+                .title {
+                    font-size: 1.47rem;
+                }
+                padding-bottom: 1.4rem;
+            }
+            &__button {
+                padding: 1.75rem 4.7rem;
+            }
+        }
+    }
+
+    .info {
+        &__wrapper {
+
+            flex-direction: row;
+            justify-content: center;
+            align-items: start;
+
+        }
+        &__about {
+            width: 33%;
+            &__title {
+                padding-top: 3rem;
+                padding-bottom: 1rem;
+            }
+            &__descr .descr {
+                font-size: 0.9rem;
+                text-transform: capitalize;
+            }
+            &__social {
+                padding-top: 0.8rem;
+            }
+        }
+    }
+    .footer {
+        &__descr {
+            padding: 1rem 20rem;
+        }
+    }
+}
+@media (min-width:1509px) {
+    .container {
+        max-width: 1170px;
+    }
+    .container__full {
+        max-width: 1510px;
+    }
+    .header {
+        &__container {
+            max-width: 1210px;
+            margin: 0 auto;
+        }
+        
+        &__nav__menu__items__link {
+            padding: 2.5rem 2.1rem 2.5rem 2.2rem;
+        }
+    }
+    .promo {
+        min-height: 747px;
+        &__content {
+            &__title {
+                .title {
+                    font-size: 3.95rem;
+                }
+                padding-top: 7.6rem;
+                padding-bottom: 1.8rem;
+            }
+            &__descr {
+                .descr {
+                    font-size: 1.5rem;
+                    line-height: 1.5rem;
+                }
+                padding: 0.5rem 5rem 5.5rem 5rem;
+                
+            }
+            &__button {
+                padding: 1.5rem 5.75rem;
+            }
+        }
+    }
+    .icons {
+        min-height: 916px;
+        &__cards {
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+        &__cards {
+            padding: 2rem 0;
+        }
+        
+        &__card {
+            width: 33%;
+            &__title {
+                padding: 3.5rem 0rem 0rem 0rem;
+                & .title {
+                    font-size: 1.5rem;
+                }
+            }
+            &__img img{
+                padding-top: 5rem;
+                width: 100%;
+            }
+            &__descr {
+                padding: 2.5rem 1rem 0rem 0rem;
+                & .descr {
+                    font-size: 1.1rem;
+                    line-height: 1.4rem;
+                }
+            }
+        }
+    }
+    .bio {
+        min-height: 827px;
+       
+        &__card {
+            padding-top: 8rem;
+
+            &__img {
+
+                & img {
+                    width: 95%;
+
+                }
+            }
+            &__title {
+                padding-top: 1.7rem;
+                & .title {
+                    font-size: 1.5rem;
+                }
+            }
+            &__descr {
+                padding-top: 0.45rem;
+                padding-bottom: 0.9rem;
+
+                & .descr {
+                    padding-right: 0.2rem;
+                    font-size: 1.1rem;
+                    line-height: 1.2rem;
+                }
+            }
+            &__social {
+                padding-top: 1rem;
+                &__icon {
+                    font-size: 0.35rem;
+                }
+            }
+        }
+    }
+    .slider {
+        &__card {
+            display: flex;
+
+            &__img {
+                width: 87%;
+                & img {
+                    width: 130%;
+                    height: 100%; 
+                    object-fit:cover;
+                }
+            }
+            &__text {
+                &__quotes {
+                    padding: 7.5rem 10rem 1rem 18rem;
+                    letter-spacing: 0.1rem;
+                    
+                    & .quote {
+                        font-size: 2rem;
+                        line-height: 3rem;
+                        text-align: left;
+                    }
+                }
+                &__descr {
+                    padding: 0.8rem 17.5rem;
+                }
+            }
+        }
+    }
+    .ready {
+        min-height: 436px;
+        &__content {
+            padding-top: 7.1rem;
+            &__descr {
+                padding-bottom: 3.5rem;
+                .descr {
+                    font-size: 1.1rem;
+                }
+            }
+            &__title {
+                .title {
+                    font-size: 1.85rem;
+                }
+                padding-bottom: 1.4rem;
+            }
+            &__button {
+                padding: 1.75rem 4.7rem; 
+                & .title {
+                   
+                   font-size: 1.5rem;
+                }
+                
+            }
+        }
+    }
+    .info {
+        min-height: 250px;
+        &__wrapper {
+            flex-direction: row;
+            justify-content: center;
+            align-items: start;
+
+        }
+        &__about {
+            width: 33%;
+            &__title {
+                padding-top: 4.5rem;
+                padding-bottom: 2rem;
+                & .title {
+                    font-size: 1.1rem;
+                }
+            }
+            &__descr .descr {
+                font-size: 1.1rem;
+                text-transform: capitalize;
+            }
+            &__social {
+                padding-top: 0.8rem;
+                &__icon {
+                    font-size: 0.35rem;
+                }
+            }
+        }
+    }
+    .footer {
+        &__descr {
+            padding: 2rem 25rem;
+            & .descr {
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
